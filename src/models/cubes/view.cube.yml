@@ -1,0 +1,64 @@
+cubes:
+  - name: prod_drilldown_view_poc
+    data_source: ccp-prod-rr
+    sql_table: production_drilldown_view_poc
+
+    dimensions:
+      - name: account_id
+        sql: account_id
+        type: string
+      
+      - name: practice_name
+        sql: practice_name
+        type: string
+
+      - name: entry_date
+        sql: entry_date
+        type: time
+
+      - name: provider_name
+        sql: provider_name
+        type: string
+
+      - name: provider_type
+        sql: provider_type
+        type: string 
+
+      - name: patient_id
+        sql: patient_id
+        type: string
+
+      - name: procedure_code
+        sql: procedure_code
+        type: string
+      
+      - name: tooth_number
+        sql: tooth_number
+        type: string
+
+      - name: billed_amount
+        sql: billed_amount
+        type: number
+        format: currency
+
+      - name: production_type
+        sql: production_type
+        type: string  
+      
+
+    measures:
+      - name: count
+        type: count
+        title: '# of procedures'
+      
+      - name: billed_amount_sum
+        sql: billed_amount
+        type: sum
+        format: currency
+        title: Total Amount
+        
+      
+
+    pre_aggregations:
+    # Pre-aggregation definitions go here.
+    # Learn more in the documentation: https://cube.dev/docs/caching/pre-aggregations/getting-started
