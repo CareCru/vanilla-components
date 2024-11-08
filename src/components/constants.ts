@@ -1,8 +1,8 @@
 export const EMB_FONT =
-  '-apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+  '-apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Inter, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
 
 export const FONTS = {
-  // 'Open Sans': 'OpenSans.ttf'
+  'Inter': 'Inter_18pt-Black.ttf'
 };
 
 
@@ -15,9 +15,9 @@ export const LARGE_FONT_SIZE = '32px';
 
 
 export const COLORS = [
-'#6778DE',
-'#FF997C',
-'#9EA4F4',
+'#422E75',
+'#8C62F4',
+'#D2C0FC',
 '#B8B8D1',
 '#FF6B6C',
 '#FFC145',
