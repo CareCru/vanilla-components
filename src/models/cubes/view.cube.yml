@@ -60,6 +60,33 @@ cubes:
         title: Total Amount
         meta:
           pretext: '$'
+      
+      - name: billed_amount_sum_restorative
+        sql: billed_amount
+        type: sum
+        format: currency
+        title: Total Amount Restorative
+        filters: [{ sql: "{CUBE}.production_type = 'Restorative'"}]
+        meta:
+          pretext: '$'
+
+      - name: billed_amount_sum_hygiene
+        sql: billed_amount
+        type: sum
+        format: currency
+        title: Total Amount Hygiene
+        filters: [{ sql: "{CUBE}.production_type = 'Hygiene (Preventative)'"}]
+        meta:
+          pretext: '$'
+
+      - name: billed_amount_sum_other
+        sql: billed_amount
+        type: sum
+        format: currency
+        title: Total Amount Other
+        filters: [{ sql: "{CUBE}.production_type = 'Other'"}]
+        meta:
+          pretext: '$'
 
         
       
