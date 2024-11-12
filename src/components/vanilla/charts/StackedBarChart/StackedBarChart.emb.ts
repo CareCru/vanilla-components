@@ -34,6 +34,12 @@ export const meta = {
       category: 'Chart data',
     },
     {
+      name: 'limit',
+      type: 'number',
+      label: 'Limit results',
+      category: 'Chart data',
+    },
+    {
       name: 'metric',
       type: 'measure',
       label: 'Metric',
@@ -122,6 +128,7 @@ export default defineComponent(Component, meta, {
         from: inputs.ds,
         dimensions: [inputs.xAxis, inputs.segment],
         measures: [inputs.metric],
+        limit: inputs.limit || 50,
       }),
     };
   },
