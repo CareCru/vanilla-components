@@ -40,6 +40,8 @@ cubes:
         sql: billed_amount
         type: number
         format: currency
+        meta:
+          pretext: '$'
 
       - name: production_type
         sql: production_type
@@ -56,6 +58,9 @@ cubes:
         type: sum
         format: currency
         title: Total Amount
+        meta:
+          pretext: '$'
+
         
       
 
