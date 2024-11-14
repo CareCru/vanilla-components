@@ -1,5 +1,5 @@
 export const EMB_FONT =
-  'Inter';
+  'Inter, sans-serif';
 
 export const FONTS = {
   // 'Open Sans': 'OpenSans.ttf'
